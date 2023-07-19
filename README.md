@@ -33,7 +33,8 @@ And I also aready downloaded the deepsort weights.
 You can also download it from [here](https://drive.google.com/drive/folders/1xhG0kRH1EX5B9_Iz8gQJb7UNnn_riXi6), 
 and place `ckpt.t7` file under `deep_sort/deep/checkpoint/`
 
-5 Retrain a yolov5 weight
+5 Retrain a yolov5 weight.
+
 Please go to [official site of yolov5](https://github.com/ultralytics/yolov5) and to retrain a different model.
 
 ## Run
@@ -43,7 +44,7 @@ Please go to [official site of yolov5](https://github.com/ultralytics/yolov5) an
 python main.py  --input_path 'pathtovideo.avi' \
 --weights yolov5/weights/yolov5_diverse.pt \
 --save_txt 'folder to save txt' \
---conf-thres 0.4 \
+--conf-thres 'yolov5 threshold' \
 --save_path 'folder to save visualization'
 ```
 ~~~
